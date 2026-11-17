@@ -52,7 +52,7 @@ function desempeno() {
   let n1 = parseInt(prompt("Calificación 1 (1 a 5):"));
   let n2 = parseInt(prompt("Calificación 2 (1 a 5):"));
   let n3 = parseInt(prompt("Calificación 3 (1 a 5):"));
-  let asistencia = parseInt(prompt("Asistencia (0 a 100):"));
+  let asistencia = parseInt(prompt("Asistencia (1 a 5):"));
 
   if (n1 < 1 || n1 > 5 || n2 < 1 || n2 > 5 ||
       n3 < 1 || n3 > 5 || asistencia < 1 || asistencia > 5) {
