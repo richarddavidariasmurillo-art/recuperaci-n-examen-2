@@ -49,21 +49,21 @@ function triangulo() {
 // 5. Evaluación de desempeño académico
 function desempeno() {
   let nombre = prompt("Nombre del aprendiz:");
-  let n1 = parseInt(prompt("Calificación 1 (0 a 100):"));
-  let n2 = parseInt(prompt("Calificación 2 (0 a 100):"));
-  let n3 = parseInt(prompt("Calificación 3 (0 a 100):"));
+  let n1 = parseInt(prompt("Calificación 1 (1 a 5):"));
+  let n2 = parseInt(prompt("Calificación 2 (1 a 5):"));
+  let n3 = parseInt(prompt("Calificación 3 (1 a 5):"));
   let asistencia = parseInt(prompt("Asistencia (0 a 100):"));
 
-  if (n1 < 0 || n1 > 100 || n2 < 0 || n2 > 100 ||
-      n3 < 0 || n3 > 100 || asistencia < 0 || asistencia > 100) {
-    alert("Error: los valores deben estar entre 0 y 100");
+  if (n1 < 1 || n1 > 5 || n2 < 1 || n2 > 5 ||
+      n3 < 1 || n3 > 5 || asistencia < 1 || asistencia > 5) {
+    alert("Error: los valores deben estar entre 1 y 5");
   } else {
     let promedio = (n1 + n2 + n3) / 3;
     let resultado = "Aprobado";
 
-    if (asistencia < 80) {
+    if (asistencia < 3) {
       resultado = "No aprobado por asistencia";
-    } else if (promedio < 60) {
+    } else if (promedio < 3) {
       resultado = "No aprobado por rendimiento";
     }
 
